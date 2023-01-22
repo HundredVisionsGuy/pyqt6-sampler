@@ -44,3 +44,8 @@ Code:
 
 
 
+## Credits/Shout outs!
+Thanks so much [TeachingCS](https://www.youtube.com/@teachingcs)'s YouTube video for the video [PyQt6 Tutorial - Making Your First GUI #04 - Adding Images](https://youtu.be/-aYqBBnSeuc)
+Bookshelf and Search icons from [Maria & Guillem](https://icon-icons.com/pack/Miscellany-Web-icons/692)
+
+Python Logo Icon by [icon 54]"(https://iconscout.com/contributors/icon-54)

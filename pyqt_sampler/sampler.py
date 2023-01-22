@@ -16,6 +16,8 @@ class Window(QWidget):
     def __init__(self):
         super().__init__()
         self.dir_path = os.getcwd()
+        self.logo = "pyqt_sampler/resources/bookshelf-icon.png"
+        self.search_icon = "pyqt_sampler/resources/search-icon.png"
         self.load_fonts()
         self.UI()
 
@@ -50,9 +52,11 @@ class Window(QWidget):
     def UI(self):
         # Initialize GUI components
         app_title = QLabel("Title of App")
-        app_title.setAlignment(Qt.AlignmentFlag.AlignTop)
-        app_title.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         app_title.setFont(QFont("Libre Baskerville", 20))
+        
+        logo_label = QLabel()
+        app_logo = QPixmap(self.logo)
+        logo_label.setPixmap(app_logo)
         
         app_description = QLabel("Description goes here.")
         app_description.setAlignment(Qt.AlignmentFlag.AlignTop)
@@ -61,6 +65,7 @@ class Window(QWidget):
         search_label = QLabel("Search: ")
         # Set Layout
         vbox = QVBoxLayout()
+        title_box = QHBoxLayout()
 
         self.resize(300, 300)
         self.setWindowTitle("App Title")
@@ -69,7 +74,9 @@ class Window(QWidget):
         layout = QVBoxLayout()
         self.setLayout(layout)
 
-        layout.addWidget(app_title)
+        title_box.addWidget(logo_label)
+        title_box.addWidget(app_title)
+        layout.addLayout(title_box)
         layout.addWidget(app_description)
 
 def main():
