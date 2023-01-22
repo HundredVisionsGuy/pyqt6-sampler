@@ -1,4 +1,4 @@
-from pyqt_test import __version__
+from pyqt_sampler import __version__
 
 
 def test_version():

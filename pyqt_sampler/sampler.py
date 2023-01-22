@@ -27,11 +27,11 @@ class Window(QWidget):
         Google fonts."""
         title_font_path = (
                 self.dir_path +
-                "/pyqt_test/resources/LibreBaskerville-Bold.ttf"
+                "/pyqt_sampler/resources/LibreBaskerville-Bold.ttf"
             )
         text_font_path = (
                 self.dir_path +
-                "/pyqt_test/resources/Montserrat-Regular.ttf"
+                "/pyqt_sampler/resources/Montserrat-Regular.ttf"
         )
         id = QFontDatabase.addApplicationFont(
                 title_font_path
@@ -39,6 +39,7 @@ class Window(QWidget):
         id2 = QFontDatabase.addApplicationFont(
             text_font_path
         )
+
         # test to make sure both loaded correctly
         # addApplicationFont will return a -1 if there
         # is an error.
