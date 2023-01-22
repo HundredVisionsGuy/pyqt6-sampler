@@ -1,7 +1,13 @@
 # PyQT Sampler
 
 ## About
-This is my first foray into PyQt6 Initial set up code comes from [PyQt6 Tutorial Series | Python GUI Programming](https://coderslegacy.com/python/pyqt6-create-basic-window/)
+This is my first foray into PyQt6 Initial set up code comes from [PyQt6 Tutorial Series | Python GUI Programming](https://coderslegacy.com/python/pyqt6-create-basic-window/).
+
+My goal is to see if I can do what I've had such a hard time doing with other Py GUI frameworks. Some of the items I want to test out are:
+* ease of use (some take forever to make seemingly simple modifications)
+* Can I change the fonts? 
+* Can I add Google Fonts?
+* How easy is it to display images?
 
 ## Getting Started
 These instructions are focused on using [poetry](https://python-poetry.org/) for project management and [VSCode](https://code.visualstudio.com/) for my IDE.
